@@ -1,0 +1,239 @@
+*{
+    box-sizing:border-box
+}
+html,body{
+    overflow-x: hidden;
+    height: 100%;
+}
+body{
+    font-family: arial,sans-serif;
+    background: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+
+/* css of container */
+.top-container{
+    width:100%;
+    height:720px;
+    padding:20px 60px;
+    padding-bottom: 30px;
+    border:6px solid #fa9905;
+    background-color: #011c39;
+
+}
+/* https://www.youngias.com/wp-content/uploads/2019/05/NDA-Academy-600x408.png */
+/* background image in container */
+/*.top-container{
+    background:url("https://www.youngias.com/wp-content/uploads/2019/05/NDA-Academy-600x408.png") no-repeat center fixed;
+    background-size: cover;
+     /* background-repeat: no-repeat ; 
+}
+*/
+
+
+/*Styling of H2*/
+.heading1{
+    
+    font-family:cursive;
+    font-size:4rem;
+    font-weight:1000;
+    color:white;
+}
+/*Styling of class p1*/
+strong{
+    text-decoration: underline;
+}
+.p1{
+    margin-top:20px;
+    font-size:1.6rem;
+    color:yellow;
+    font-family:monospace;
+}
+.list{
+    color:purple;
+    font-size:1.4rem;
+    line-height: 2rem;
+    font-family:monospace;
+}
+/* Blog-container */
+.blog-container{
+    border:4px solid #011c39;
+    background-color:#fa9905;
+    margin-top:40px;
+    margin-bottom:20px;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    padding:40px 40px;
+}
+.blog-container h2{
+    font-size:4rem;
+    color:white;
+}
+
+
+/* ------------blog sections */
+/* Cards */
+.card{
+    width: 20rem;
+    height: 26rem;
+    display: inline-block;
+    background-color: white;
+    margin:40px;
+    box-shadow: 2px 1px 10px black;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.image img{
+    width: 100%;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.title{
+    text-align: center;
+    margin-top: 0.3rem;
+    padding: 5px;
+}
+.des{
+    text-align: center;
+    margin-top: 3px;
+}
+button{
+    margin-top: 3.5rem;
+    background-color: white;
+    border: 2px solid black;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    width:10rem;
+
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transition: 2s;
+} 
+
+/* Feature Container */
+.feature-container{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom:100px;
+}
+.feature-left-section{
+    width:40%;
+    padding:15px 30px;
+    background-color: #011c39;
+    color:white;
+}
+.feature-right-section{
+    width:60%;
+    border:2px solid #fa9905;
+    background-color: #fa9905;
+    padding:5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#feature-main-heading{
+    color:white;
+    font-family:cursive;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top:50px;
+}
+#feature-description{
+    color:yellow;
+    padding:5px 20px;
+    font-family: monospace;
+    font-size:1.8rem;
+    line-height: 3rem;
+    margin-top:30px;
+}
+.feature-right-section .first-row{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature-right-section .second-row{
+    margin-top:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feature-card{
+    padding:10px;
+    padding-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width:180px;
+    height:150px;
+    border:2px solid white;
+    background: white;
+    box-shadow: pink -4px 9px 25px -6px;
+    box-shadow: rgba(14, 13, 13, 0.2) 0px 60px 40px -7px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    margin-left:10px;
+    margin-right:10px;
+}
+.feature-card-top{
+    display:flex;
+    /*background-color:#011c39; */
+    padding:0px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow:0px 4px 3px pink;
+}
+.feature-card-top i{
+    color:silver;
+    font-size: 2rem;
+}
+.fone{
+    padding:6px;
+    background-color:black;
+    box-shadow:0px 4px 3px pink;
+}
+.ftwo{
+    color:black;
+    background-color: white;
+}
+.feature-card-desc{
+    margin-top:20px;
+    color:black;
+    font-family: monospace;
+    font-size:1.8rem;
+    padding:10px;
+    text-align: center;
+}
