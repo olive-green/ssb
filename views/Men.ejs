@@ -1,0 +1,67 @@
+<%- include("partials/header") %>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="../public/css/Men.css">
+<!-- -------------------body ---------------- -->
+    <div class="ui grid">
+        <div class="four wide column">
+          <div class="ui vertical fluid tabular menu">
+            <a class="active item">
+              Intermediate (10+2)
+            </a>
+            <a class="item">
+                Graduate UPSC
+            </a>
+            <a class="item">
+              Graduate Non UPSC
+            </a>
+            <a class="item">
+                Graduate Technical Entries
+            </a>
+            <a class="item">
+                Service Entry
+            </a>
+            <a class="item">
+                Miscellaneous Entries
+            </a>
+          </div>
+        </div>
+        <div class="twelve wide stretched column">
+          <div class="ui segment">
+                <div class="tabs-content tabs-content-active" data-tab="1">
+                    <%- include("partials/Men/NDA") %> 
+                </div>
+                <div class="tabs-content" data-tab="2">
+                    <%- include("partials/Men/IMA") %> 
+                </div>
+                <div class="tabs-content" data-tab="3">
+                    <%- include("partials/Men/JAG") %>
+                </div>
+                    
+                <div class="tabs-content" data-tab="4">
+                    <%- include("partials/Men/TGC") %>
+                </div>    
+                <div class="tabs-content" data-tab="5">
+                    <%- include("partials/Men/ACC") %>
+                </div>    
+                <div class="tabs-content" data-tab="6">
+                    <%- include("partials/Men/RVC") %>
+                </div>    
+           </div>
+        
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+<!-- adding js of fomantic -->
+<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+
+</body>
+</html>
+
+

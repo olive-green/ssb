@@ -25,6 +25,15 @@ app.get("/", (req, res) => {
     });
 });
 
+app.get("/men",(req,res)=>{
+    let pageTitle = "SSB|MEN";
+    let cssName = "css/Men.css";
+    res.render("Men", {
+        pageTitle: pageTitle,
+        cssFile: cssName,
+    });
+})
+
 
 /* Port */
 app.listen(port, () => {
