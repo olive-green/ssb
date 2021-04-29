@@ -1,0 +1,41 @@
+<%- include("partials/header") %>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="../public/css/Men.css">
+<!-- -------------------body ---------------- -->
+    <div class="ui grid">
+        <div class="four wide column">
+          <div class="ui vertical fluid tabular menu">
+            <a class="active item">
+              Graduate UPSC
+            </a>
+            <a class="item">
+              Graduate Non UPSC
+            </a>
+            <a class="item">
+                Graduate Technical Entries
+            </a>
+          </div>
+        </div>
+        <div class="twelve wide stretched column">
+          <div class="ui segment">
+                <div class="tabs-content tabs-content-active" data-tab="1">
+                    <%- include("partials/Women/UPSC") %> 
+                </div>
+                <div class="tabs-content" data-tab="2">
+                    <%- include("partials/Women/NonUPSC") %> 
+                </div>
+                <div class="tabs-content" data-tab="3">
+                    <%- include("partials/Women/Tech") %>
+                </div>
+           </div>
+        
+        </div>
+      </div>
+
+<!-- adding js of fomantic -->
+<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
+
+</body>
+</html>
+
+
