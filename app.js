@@ -33,8 +33,42 @@ app.get("/men",(req,res)=>{
         cssFile: cssName,
     });
 })
+/* Written Examination */
+app.get("/written/acc",(req,res)=>{
+    let pageTitle = "SSB|WRITTEN";
+    let cssName = "";
+    res.render("Written-Examination/ACC", {
+        pageTitle: pageTitle,
+        cssFile: cssName,
+    });
+})
 
+app.get("/written/nda",(req,res)=>{
+    let pageTitle = "SSB|WRITTEN";
+    let cssName = "";
+    res.render("Written-Examination/NDA", {
+        pageTitle: pageTitle,
+        cssFile: cssName,
+    });
+})
 
+app.get("/written/afcat",(req,res)=>{
+    let pageTitle = "SSB|WRITTEN";
+    let cssName = "";
+    res.render("Written-Examination/AFCAT", {
+        pageTitle: pageTitle,
+        cssFile: cssName,
+    });
+})
+
+app.get("/written/cds",(req,res)=>{
+    let pageTitle = "SSB|WRITTEN";
+    let cssName = "";
+    res.render("Written-Examination/CDS", {
+        pageTitle: pageTitle,
+        cssFile: cssName,
+    });
+})
 /* Port */
 app.listen(port, () => {
     console.log(`Server running at  http://${hostname}:${port}/`);

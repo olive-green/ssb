@@ -18,11 +18,6 @@
     <!--Custom Stylesheet -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href=<%= cssFile %>>
-
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <style>
   .toc.item {
@@ -68,47 +63,7 @@
 <body>
 
 
-  <div class="ui tabular menu" id="topMenu" style="
-        width: 100%;
-        z-index: 100;
-        font-size: 1.1rem;
-        border: none;
-        ">
-    <a class="toc item left">
-      <i class="sidebar icon"></i>
-    </a>
-    <a href="/" class="item logo">
-      <img src="images/logo.png" alt="logo" style="width: 60px;" />
-      <strong class="logoText" style="font-size: 1.5rem;">Jss</strong>
-    </a>
-    <div class="right menu">
-      <a href="/blogs" class="item ui large secondary tertiary button">
-        Blogs
-      </a>
-      <a href="/resources" class="item ui large secondary tertiary button">
-        Resources
-      </a>
-      <a href="/community" class="item ui large secondary tertiary button">
-        Community
-      </a>
-
-      <a href="/community" class="item ui large secondary tertiary button">
-        Ct
-      </a>
-      <a href="/contribute" class="item ui large secondary tertiary button">
-        Mew
-      </a>
-
-
-
-      <!-- hidden trigger -->
-      <a class="toc item right" style="visibility: hidden;">
-        <i class="sidebar icon"></i>
-      </a>
-
-    </div>
-  </div>
-  <!-- following navbar -->
+  
   <div class="ui tabular menu" id="followingMenu" style="
         margin: 0;
         background-color: white;
@@ -135,21 +90,28 @@
         Written Examinations
         <i class="dropdown icon"></i>
         <div class="menu">
-          <a class="item" href="https://www.amandixit.me">NDA</a>
-          <a href="" class="item">CDS/OTA</a>
-          <a href="" class="item">AFCAT</a>
-          <a href="" class="item">ACC</a>
+          <a href="/written/nda" class="item">NDA</a>
+          <a href="/written/cds" class="item">CDS/OTS</a>
+          <a href="/written/afcat" class="item">AFCAT</a>
+          <a href="/written/acc" class="item">ACC</a>
         </div>
       </div>
-      <a href="/community" class="item ui large secondary tertiary button">
+      <a href="/men" class="item ui large secondary tertiary button">
         SSB Interview
       </a>
       <a href="/contribute" class="item ui large secondary tertiary button">
         Practice
       </a>
-      <a href="/community" class="item ui large secondary tertiary button">
+      <div class="i simple dropdown item ui large secondary tertiary button">
         Officier Entries
-      </a>
+        <i class="dropdown icon"></i>
+        <div class="menu">
+          <a class="item" href="/men">For Men</a>
+          <a href="/women" class="item">For Women</a>
+          <a href="" class="item">Militiary Nursing Service</a>
+          <a href="" class="item">Army Dental Corps</a>
+        </div>
+      </div>
       <a href="/contribute" class="item ui large secondary tertiary button">
         Achievers
       </a>
