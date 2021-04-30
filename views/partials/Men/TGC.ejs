@@ -1,10 +1,10 @@
 
 
- <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#UES">UES</a></li>
-    <li><a data-toggle="tab" href="#TGC">TGC</a></li>
-    <li><a data-toggle="tab" href="#SSC">SSC(Technical)</a></li>
-    <li><a data-toggle="tab" href="#AEC">AEC</a></li>
+ <ul class="nav nav-tabs" style="display:flex !important;">
+    <li class="active change"><a  class="bsix" data-toggle="tab" href="#UES">UES</a></li>
+    <li class="change"><a  class="bsix"data-toggle="tab" href="#TGC">TGC</a></li>
+    <li class="change"><a  class="bsix"data-toggle="tab" href="#SSC">SSC(Technical)</a></li>
+    <li class="change"><a  class="bsix"data-toggle="tab" href="#AEC">AEC</a></li>
 </ul>
   
   <div class="tab-content">
@@ -217,3 +217,41 @@
         </div>
     </div>   
   </div>
+  <script>
+    const buttons5 = document.querySelectorAll(".bsix");
+    const uec = document.getElementById("UES");
+    const tgc = document.getElementById("TGC");
+    const sc = document.getElementById("SSC");
+    const aec = document.getElementById("AEC");
+    aec.style.display="none";
+    tgc.style.display="none";
+    sc.style.display="none";
+    for(let i=0;i<buttons5.length;i++){
+      buttons5[i].addEventListener("click",(e)=>{
+        if(i==0){
+          aec.style.display="none";
+          tgc.style.display="none";
+          sc.style.display="none";
+          uec.style.display="block";
+      }
+      else if(i==1){
+        uec.style.display="none";
+        sc.style.display="none";
+        aec.style.display="none";
+        tgc.style.display="block";
+      }
+      else if(i==2){
+          tgc.style.display="none";
+          uec.style.display="none";
+          aec.style.display="none";
+          sc.style.display="block";
+      }
+      else{
+          sc.style.display="none";
+          uec.style.display="none";
+          tgc.style.display="none";
+          aec.style.display="block";
+      }
+      })
+     }
+  </script>

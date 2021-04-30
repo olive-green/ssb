@@ -1,15 +1,15 @@
 
 
-    <ul class="nav nav-tabs">
-        <li class="active"><a data-toggle="tab" href="#NDA">NDA</a></li>
-        <li><a data-toggle="tab" href="#TES">TES</a></li>
+    <ul class="nav nav-tabs" style="display: flex !important;">
+        <li class="active change" ><a class="bone" data-toggle="tab" href="#NDA">NDA</a></li>
+        <li class="change"><a class="bone" data-toggle="tab" href="#TES">TES</a></li>
       </ul>
       
       <div class="tab-content">
         <div id="NDA" class="tab-pane fade in active">
           <h3>NDA</h3>
           <div class="table-content">
-            <table class="nda-table"  cellpadding="0" cellspacing="0">
+            <table class="nda-table"  cellpadding="" cellspacing="0">
                 <tr>
                    <td>Vacancies Per Course</td> 
                    <td>
@@ -118,3 +118,21 @@
           </div>
         </div> 
       </div>
+      <script>
+          const buttons = document.querySelectorAll(".bone");
+          const nda = document.getElementById("NDA");
+          const tes = document.getElementById("TES");
+          tes.style.display="none";
+          for(let i=0;i<buttons.length;i++){
+            buttons[i].addEventListener("click",(e)=>{
+              if(i==0){
+                tes.style.display="none";
+                nda.style.display="block";
+                }
+              else if(i==1){
+                nda.style.display="none";
+                tes.style.display="block";
+              }
+            })
+          }
+      </script>

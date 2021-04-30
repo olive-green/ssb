@@ -1,8 +1,8 @@
 
 
- <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#IMA">IMA</a></li>
-    <li><a data-toggle="tab" href="#OTA">OTA</a></li>
+ <ul class="nav nav-tabs" style="display: flex !important;">
+    <li class="active change"><a class="btwo" data-toggle="tab" href="#IMA">IMA</a></li>
+    <li class="change"><a class="btwo" data-toggle="tab" href="#OTA">OTA</a></li>
   </ul>
   
   <div class="tab-content">
@@ -115,3 +115,21 @@
         </div>
     </div> 
   </div>
+  <script>
+          const buttons1 = document.querySelectorAll(".btwo");
+          const ima = document.getElementById("IMA");
+          const ota = document.getElementById("OTA");
+          ota.style.display="none";
+          for(let i=0;i<buttons1.length;i++){
+            buttons1[i].addEventListener("click",(e)=>{
+              if(i==0){
+                ota.style.display="none";
+                ima.style.display="block";
+                }
+              else{
+                ima.style.display="none";
+                ota.style.display="block";
+              }
+            })
+          }
+  </script>

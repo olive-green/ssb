@@ -1,8 +1,8 @@
-<ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#TA">TERRITORIAL ARMY</a></li>
-    <li><a data-toggle="tab" href="#RVC">RVC</a></li>
-    <li><a data-toggle="tab" href="#AMC">AMC</a></li>
-    <li><a data-toggle="tab" href="#APS">APS</a></li>
+<ul class="nav nav-tabs" style="display:flex !important;">
+    <li class="active change"><a class="bfive" data-toggle="tab" href="#TA">TERRITORIAL ARMY</a></li>
+    <li class="change"><a class="bfive" data-toggle="tab" href="#RVC">RVC</a></li>
+    <li class="change"><a class="bfive" data-toggle="tab" href="#AMC">AMC</a></li>
+    <li class="change"><a class="bfive" data-toggle="tab" href="#APS">APS</a></li>
   
 </ul>
   
@@ -196,3 +196,41 @@
     </div> 
     
   </div>
+  <script>
+    const buttons4 = document.querySelectorAll(".bfive");
+    const ta = document.getElementById("TA");
+    const rvc = document.getElementById("RVC");
+    const amc = document.getElementById("AMC");
+    const aps = document.getElementById("APS");
+    amc.style.display="none";
+    rvc.style.display="none";
+    aps.style.display="none";
+    for(let i=0;i<buttons4.length;i++){
+      buttons4[i].addEventListener("click",(e)=>{
+        if(i==0){
+         amc.style.display="none";
+         rvc.style.display="none";
+         aps.style.display="none";
+         ta.style.display="block";
+      }
+      else if(i==1){
+        ta.style.display="none";
+        amc.style.display="none";
+        aps.style.display="none";
+        rvc.style.display="block";
+      }
+      else if(i==2){
+          ta.style.display="none";
+          rvc.style.display="none";
+          aps.style.display="none";
+          amc.style.display="block";
+      }
+      else{
+          ta.style.display="none";
+          rvc.style.display="none";
+          amc.style.display="none";
+          aps.style.display="block";
+      }
+      })
+     }
+  </script>
