@@ -33,10 +33,19 @@ app.get("/men",(req,res)=>{
         cssFile: cssName,
     });
 })
+
+app.get("/women",(req,res)=>{
+    let pageTitle = "SSB|MEN";
+    let cssName = "css/Men.css";
+    res.render("Women", {
+        pageTitle: pageTitle,
+        cssFile: cssName,
+    });
+})
 /* Written Examination */
 app.get("/written/acc",(req,res)=>{
     let pageTitle = "SSB|WRITTEN";
-    let cssName = "";
+    let cssName = "./../css/written/exam.css";
     res.render("Written-Examination/ACC", {
         pageTitle: pageTitle,
         cssFile: cssName,
@@ -45,7 +54,7 @@ app.get("/written/acc",(req,res)=>{
 
 app.get("/written/nda",(req,res)=>{
     let pageTitle = "SSB|WRITTEN";
-    let cssName = "";
+    let cssName = "./../css/written/exam.css";
     res.render("Written-Examination/NDA", {
         pageTitle: pageTitle,
         cssFile: cssName,
@@ -54,7 +63,7 @@ app.get("/written/nda",(req,res)=>{
 
 app.get("/written/afcat",(req,res)=>{
     let pageTitle = "SSB|WRITTEN";
-    let cssName = "";
+    let cssName = "./../css/written/exam.css";
     res.render("Written-Examination/AFCAT", {
         pageTitle: pageTitle,
         cssFile: cssName,
@@ -63,11 +72,32 @@ app.get("/written/afcat",(req,res)=>{
 
 app.get("/written/cds",(req,res)=>{
     let pageTitle = "SSB|WRITTEN";
-    let cssName = "";
+    let cssName = "./../css/written/exam.css";
     res.render("Written-Examination/CDS", {
         pageTitle: pageTitle,
         cssFile: cssName,
     });
+})
+
+
+/* SSB interview */
+app.get("/ssbinterview", (req, res) => {
+    let pageTitle = "SSB|Interview";
+    let cssName = "./css/interview.css";
+    res.render("ssb-interview", {
+        pageTitle: pageTitle,
+        cssFile: cssName,
+    });
+})
+
+/* Team Section */
+app.get("/team", (req, res) => {
+    let pageTitle = "SSB|TEAM";
+    let cssName = "./css/about.css";
+    res.render("about", {
+        pageTitle: pageTitle,
+        cssFile: cssName,
+    })
 })
 /* Port */
 app.listen(port, () => {

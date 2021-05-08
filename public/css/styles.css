@@ -10,11 +10,12 @@ body{
     background: #fff;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 20px;
+    width: 15px;
   }
   
   /* Track */
@@ -34,35 +35,55 @@ body{
     background: #b30000; 
   }
 
+  .header-container{
+      background-color: #011c39;
+      color:#fa9905;
+      font-size:1.6rem;
+      font-family:monospace;
+      padding:5px;
+      height:60px;
+    /*  border:2px solid black; */
+      margin-top:50px;
+      text-align: center;
+  }
+  #second{
+      display:none;
+  }
 
 /* css of container */
 .top-container{
-    width:100%;
-    height:720px;
+    display:flex;
+    justify-content: space-between;
+  /*  width:100%; */
+    height:500px;
     padding:20px 60px;
-    margin-top:50px;
+    margin-top:25px;
     padding-bottom: 30px;
-    border:6px solid #fa9905;
-    background-color: #011c39;
-
+    border-bottom:6px dotted #fa9905;
+    border-bottom-width: 6px;
+   /* border:6px solid #fa9905;
+    border:4px solid #011c39; */
+   /* background-color: #011c39;
+    background-color: white;
+    background-color: #fa9905; */
+  
+}
+.top-left-section{
+    margin-top:5%;
+    width:40%;
 }
 /* https://www.youngias.com/wp-content/uploads/2019/05/NDA-Academy-600x408.png */
-/* background image in container */
-/*.top-container{
-    background:url("https://www.youngias.com/wp-content/uploads/2019/05/NDA-Academy-600x408.png") no-repeat center fixed;
-    background-size: cover;
-     /* background-repeat: no-repeat ; 
-}
-*/
-
+/* background image in container 
 
 /*Styling of H2*/
 .heading1{
-    
     font-family:cursive;
     font-size:4rem;
     font-weight:1000;
     color:white;
+    color:#fa9905;
+    color:white;
+    color:darkgreen;
 }
 /*Styling of class p1*/
 strong{
@@ -72,19 +93,24 @@ strong{
     margin-top:20px;
     font-size:1.6rem;
     color:yellow;
+    color:#011c39;
+    color:white;
     font-family:monospace;
 }
 .list{
-    color:purple;
+    color:#fa9905;
     font-size:1.4rem;
     line-height: 2rem;
     font-family:monospace;
 }
 /* Blog-container */
 .blog-container{
-    border:4px solid #011c39;
     background-color:#fa9905;
-    margin-top:40px;
+    /*border:4px solid #fa9905; */
+    background-color: #011c39;
+   /* border:4px solid #011c39; */
+    background-color: white;
+    margin-top:60px;
     margin-bottom:20px;
     display:flex;
     flex-direction: column;
@@ -94,7 +120,7 @@ strong{
 }
 .blog-container h2{
     font-size:4rem;
-    color:white;
+    color:#fa9905;
 }
 
 
@@ -147,20 +173,21 @@ button:hover{
 /* Feature Container */
 .feature-container{
     display:flex;
+    flex-direction:column;
     justify-content: center;
     margin-top: 20px;
     margin-bottom:100px;
 }
 .feature-left-section{
-    width:40%;
+    width:100%;
     padding:15px 30px;
-    background-color: #011c39;
-    color:white;
+    background-color:white;
+    color:#011c39;
 }
 .feature-right-section{
-    width:60%;
-    border:2px solid #fa9905;
-    background-color: #fa9905;
+    width:100%;
+   /* border:2px solid #fa9905; */
+    background-color: white;
     padding:5px;
     display: flex;
     flex-direction: column;
@@ -168,14 +195,14 @@ button:hover{
     justify-content: center;
 }
 #feature-main-heading{
-    color:white;
-    font-family:cursive;
-    font-size: 2.5rem;
+    color:#fa9905;
+    font-family:monospace;
+    font-size: 4.5rem;
     text-align: center;
     margin-top:50px;
 }
 #feature-description{
-    color:yellow;
+    color:black;
     padding:5px 20px;
     font-family: monospace;
     font-size:1.8rem;
@@ -198,15 +225,15 @@ button:hover{
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
-    width:180px;
-    height:150px;
+    width:200px;
+    height:180px;
     border:2px solid white;
     background: white;
     box-shadow: pink -4px 9px 25px -6px;
     box-shadow: rgba(14, 13, 13, 0.2) 0px 60px 40px -7px;
     box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
-    margin-left:10px;
-    margin-right:10px;
+    margin-left:30px;
+    margin-right:30px;
 }
 .feature-card-top{
     display:flex;
@@ -238,3 +265,164 @@ button:hover{
     padding:10px;
     text-align: center;
 }
+
+
+/* Testimonial Section */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+
+main {
+  width: 100%;
+  max-width: 1440px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 16px;
+}
+main .slider .buttons {
+  z-index: 0;
+  width: 80px;
+  height: 40px;
+ /* position: absolute; */
+  margin-top:0px;
+  margin-left:auto;
+  margin-right: auto;
+  border-radius: 50px;
+  transform: translateX(50%);
+  background-color: #ffffff;
+}
+main .slider .buttons .previous,
+main .slider .buttons .next {
+  width: 50%;
+  height: 100%;
+ /* position: absolute;  */
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+main .slider .buttons .previous {
+  left: 0;
+  background-image: url("https://alcs-slider.netlify.app/images/icon-prev.svg");
+}
+main .slider .buttons .previous:hover {
+  transform: scale(1.25);
+}
+main .slider .buttons .next {
+  right: 0;
+  background-image: url("https://alcs-slider.netlify.app/images/icon-next.svg");
+}
+main .slider .buttons .next:hover {
+  transform: scale(1.25);
+}
+main .slider .slide {
+  display: flex;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+}
+main .slider .slide .testimonial {
+  padding: 32px 51px;
+  background-size: 60px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-image: url(https://alcs-slider.netlify.app/images/pattern-quotes.svg);
+}
+main .slider .slide .testimonial blockquote {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-bottom: 36px;
+}
+main .slider .slide .testimonial .author {
+  font-size: 15px;
+  font-weight: 700;
+}
+main .slider .slide .testimonial .author span {
+  display: block;
+  color: #babacf;
+  font-weight: 500;
+}
+ main .slider .slide .slider-img {
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://alcs-slider.netlify.app/images/pattern-bg.svg);
+}
+ main .slider .slide .slider-img img {
+  width: 240px;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0px 16px 40px 0px rgba(135, 105, 210, 0.4);
+}
+main .slider .slide .active {
+  opacity: 1;
+  transform: translateX(0) scale(1);
+  transition-delay: 0.4s;
+}
+.hide {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+   main {
+    max-width: 800px;
+  }
+   main .slider .buttons {
+    top: 280px;
+  }
+}
+@media screen and (min-width: 900px) {
+   main {
+    width: 100%;
+    max-width: 1054px;
+    padding: 64px 64px 64px 0;
+  }
+   main .slider .buttons {
+    right: 43%;
+    top: 500px;
+  }
+   main .slider .slide {
+    position: relative;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+  }
+  main .slider .slide .testimonial {
+    padding: 32px 0 0 0;
+    background-size: 80px;
+    background-position: 19% -7%;
+    transform: translateX(100px);
+  }
+  main .slider .slide .testimonial blockquote {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  main .slider .slide .testimonial .author span {
+    display: contents;
+  }
+  main .slider .slide .slider-img {
+    padding: 55px;
+  }
+  main .slider .slide .slider-img img {
+    width: 400px;
+  }
+}
+
+
+/* Footer Section */
+
