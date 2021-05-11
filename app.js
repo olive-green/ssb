@@ -25,6 +25,7 @@ app.get("/", (req, res) => {
     });
 });
 
+// officer entries Mens page
 app.get("/men",(req,res)=>{
     let pageTitle = "SSB|MEN";
     let cssName = "css/Men.css";
@@ -33,7 +34,7 @@ app.get("/men",(req,res)=>{
         cssFile: cssName,
     });
 })
-
+// officer entries Womens page
 app.get("/women",(req,res)=>{
     let pageTitle = "SSB|MEN";
     let cssName = "css/Men.css";
@@ -97,6 +98,16 @@ app.get("/team", (req, res) => {
     res.render("about", {
         pageTitle: pageTitle,
         cssFile: cssName,
+    })
+})
+
+// interview tips page
+app.get("/interviewTips",(req,res)=>{
+    let pageTitle="SSB|Tips";
+    let cssName="./css/interviewTips.css";
+    res.render("interviewTips",{
+        pageTitle:pageTitle,
+        cssFile:cssName
     })
 })
 /* Port */
