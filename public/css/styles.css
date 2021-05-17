@@ -37,10 +37,10 @@ body{
 
   .header-container{
       background-color: #011c39;
-      color:#fa9905;
-      font-size:1.6rem;
+      color:#e2ded7;
+      font-size:1.3rem;
       font-family:monospace;
-      padding:5px;
+      padding:17px;
       height:60px;
     /*  border:2px solid black; */
       margin-top:50px;
@@ -59,8 +59,8 @@ body{
     padding:20px 60px;
     margin-top:25px;
     padding-bottom: 30px;
-    border-bottom:6px dotted #fa9905;
-    border-bottom-width: 6px;
+    /* border-bottom:6px dotted #fa9905;
+    border-bottom-width: 6px; */
    /* border:6px solid #fa9905;
     border:4px solid #011c39; */
    /* background-color: #011c39;
@@ -72,6 +72,26 @@ body{
     margin-top:5%;
     width:40%;
 }
+
+.top-container .soldier-image {
+  width:60%;
+  padding: 30px;
+  /* display: flex; */
+  margin-bottom: 40px;
+  align-items: center;
+  justify-content: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://alcs-slider.netlify.app/images/pattern-bg.svg);
+}
+
+.top-container .soldier-image img{
+  border-radius: 10px;
+  box-shadow: 0px 16px 40px 0px rgba(135, 105, 210, 0.4);
+  width:440px;height:400px;
+}
+
 /* https://www.youngias.com/wp-content/uploads/2019/05/NDA-Academy-600x408.png */
 /* background image in container 
 
@@ -425,4 +445,33 @@ main .slider .slide .active {
 
 
 /* Footer Section */
+
+@media only screen and (max-width:900px){
+  .header-container{
+    width:50%;
+    height:78px;
+  }
+  .top-container{
+    flex-direction: column;
+    /* flex:1; */
+    padding:0;
+    height: 100%;
+    margin:0 15px;
+  }
+  .top-container .soldier-image{
+    margin-top: 44px;
+    width: 52%;
+  }
+  .top-container .soldier-image img{
+    width: 60%;
+    height: 158%;
+
+  }
+  .blog-container{
+    width:50%;
+  }
+  .blog-container #style1{
+    width:50%;
+  }
+}
 

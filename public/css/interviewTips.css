@@ -11,14 +11,14 @@
   --font-ibm-plex-sans: "IBM Plex Sans", sans-serif;
 }
 
-html,
+/* html,
 body {
   overflow: auto;
   height: 100vh;
   width: 100%;
   background: var(--color-bg);
 
-}
+} */
 
 
 .card {
@@ -28,11 +28,14 @@ body {
   margin-bottom: 40px;
   border-radius: 4px;
   box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  width: 100%;
+  width: 94%;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 .card h1 {
+  text-align:center;
+  letter-spacing: 1px;
   font-family: var(--font-ibm-plex-sans);
   font-style: normal;
   font-weight: bold;
@@ -71,6 +74,10 @@ body {
   font-size: 14px;
   line-height: 1.4;
   color: var(--color-title);
+}
+
+.card details ul li {
+  list-style:none;
 }
 .card details summary:not(:last-of-type),
 .card details p:not(:last-of-type) {
