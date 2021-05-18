@@ -15,7 +15,7 @@ body{
 
 /* width */
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 12px;
   }
   
   /* Track */
@@ -26,13 +26,13 @@ body{
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: red; 
+    background: rgb(175, 162, 162); 
     border-radius: 10px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #b30000; 
+    background: #6e6c6c; 
   }
 
   .header-container{
@@ -43,7 +43,7 @@ body{
       padding:17px;
       height:60px;
     /*  border:2px solid black; */
-      margin-top:50px;
+      margin-top:89px;
       text-align: center;
   }
   #second{
