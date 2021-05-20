@@ -1,13 +1,13 @@
 <ul class="nav nav-tabs">
-    <li class="active change"><a class="bone" data-toggle="tab" href="#NCC">SSCW(NCC)</a></li>
-    <li class="change"><a class="bone" data-toggle="tab" href="#JAG">SSCW(JAG)</a></li>
+    <li class="active"><a data-toggle="tab" href="#NCC">SSCW(NCC)</a></li>
+    <li><a data-toggle="tab" href="#JAG">SSCW(JAG)</a></li>
   
 </ul>
   
   <div class="tab-content">
     <div id="NCC" class="tab-pane fade in active">
         <h3>SSCW(NCC)</h3>
-        <p>NCC (SPL) Entry Women</p>
+        <h4>NCC (SPL) Entry Women</h4>
       <div class="table-content">
         <table class="nda-table"  cellpadding="0" cellspacing="0">
             <tbody>
@@ -61,7 +61,7 @@
     </div>
     <div id="JAG" class="tab-pane fade">
         <h3>SSCW(JAG)</h3>
-        <p>JAG Women</p>
+        <h4>JAG Women</h4>
       <div class="table-content">
         <table class="nda-table" idth="100%" cellspacing="0" cellpadding="0" >
             <tbody>
@@ -114,21 +114,3 @@
     </div> 
     
   </div>
-  <script>
-    const buttons = document.querySelectorAll(".bone");
-    const nda = document.getElementById("NCC");
-    const tes = document.getElementById("JAG");
-    tes.style.display="none";
-    for(let i=0;i<buttons.length;i++){
-      buttons[i].addEventListener("click",(e)=>{
-        if(i==0){
-          tes.style.display="none";
-          nda.style.display="block";
-          }
-        else if(i==1){
-          nda.style.display="none";
-          tes.style.display="block";
-        }
-      })
-    }
-</script>

@@ -2,24 +2,23 @@
 <!-- adding header file -->
 
 <%- include("partials/header") %>
-<link rel="stylesheet" href="../css/Men.css">
 
 <!-- -------------------body ---------------- -->
-    <div class="content-box ui grid">
-        <div class="side-bar four wide column">
+    <div class="ui grid">
+        <div class="four wide column">
           <div class="ui vertical fluid tabular menu">
-            <a class="active item self">
+            <a class="active item">
               Graduate UPSC
             </a>
-            <a class="item self">
+            <a class="item">
               Graduate Non UPSC
             </a>
-            <a class="item self">
+            <a class="item">
                 Graduate Technical Entries
             </a>
           </div>
         </div>
-        <div class="twelve wide stretched column" style="background-color: #011c39;">
+        <div class="twelve wide stretched column">
           <div class="ui segment">
                 <div class="tabs-content tabs-content-active" data-tab="1">
                     <%- include("partials/Women/UPSC") %> 
@@ -34,28 +33,5 @@
         
         </div>
       </div>
-      <!-- adding js of fomantic -->
-<script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.7/dist/semantic.min.js"></script>
-<script>
-   /* Code For Changing Content */
-   const selfItem= document.querySelectorAll(".self");
-      const tabsContent=document.querySelectorAll(".tabs-content");
-      console.log(selfItem.length);
-      console.log(tabsContent.length);
-      for(let i=0;i<selfItem.length;i++){
-          selfItem[i].addEventListener("click",(e)=>{
-              selfItem[i].classList.add("active");
-              for(let k=0;k<selfItem.length;k++)
-               {
-                   if(i!=k)
-                   selfItem[k].classList.remove("active");
-               }
-              tabsContent[i].style.display="block";
-              for(let j=0;j<tabsContent.length;j++){
-                  if(i!=j) tabsContent[j].style.display="none";
-              }
-          })
-      }
-</script>
 <!-- Footer File-->
 <%- include("partials/footer") %>
