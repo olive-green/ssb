@@ -6,27 +6,6 @@
 }
 
 
-/* css for sidebar */
-.ui.grid {
-    margin-top:100px !important;
-    background-color:#fff;
-    margin-bottom:1rem;
-}
-.ui.vertical.tabular.menu .item {
-    border-color: #e7f1e7;
-    text-align: center;
-}
-.side-bar{
-    background-color: #fa9906;
-}
-.ui.segment{
-    width:99%;
-}
-
-.table-content .nda-table tr:nth-child(even){
-    background-color: #c7c5c5;
-}
-
 /* css for tabs */
 .tabs{
     border:1px solid #ccc; 
@@ -73,10 +52,6 @@
 }
 .table-content >:first-child{
     margin-top: 0;
-}
-
-.nav.nav-tabs{
-    display: flex !important;
 }
 
 .container{
@@ -159,21 +134,4 @@
 }
 a{
     color:white;
-}
-
-/* media queries */
-@media only screen and (max-width:500px){
-    .ui.grid{
-        width:100%;
-        margin-bottom: 5px;
-    }
-   
-    *{
-        font-size:0.8rem;
-    }
-    .ui.vertical.tabular.menu .item{
-        padding:19px;
-
-    }
-
 }
